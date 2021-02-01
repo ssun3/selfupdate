@@ -21,5 +21,5 @@ jobs:
       - get: concourse-examples
         trigger: true
         passed: [set-self]
-      - set_pipeline: ssun3-hello
-        file: concourse-examples/pipelines/hello-world.yml
+      - set_pipeline: ssun3-git-trigger
+        file: concourse-examples/pipelines/git-triggered.yml
